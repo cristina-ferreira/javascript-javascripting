@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Javascripting</title>
+	</head>
+	<body>
+	  <script>
+		let answer = prompt("Hey my friend, do you like potatoes?");
+		let char = '#';
+		if (answer === "no" || answer === null || answer === "" || answer === undefined) {
+			alert("I´m not sure");
+		} else {
+			for (i = 1; i <= 7; i++) {
+				var p = document.createElement("P");
+				p.innerText = char;
+				document.body.appendChild(p);
+				char = char + '#';
+			}
+		}
+	  </script>
+	</body>
+</html>
+
+
